@@ -1,3 +1,5 @@
+# Download as an .rmd file to use in R
+
 ---
 title: "Jessica C - summer analysis 2025"
 author: "Madison"
@@ -9,7 +11,6 @@ output: pdf_document
 install.package('readxl')
 library(readxl)
 ```
-
 
 ```{r}
 # Load the file using pathname (make sure file in the R directory to import)
@@ -27,7 +28,7 @@ anova_model <- aov(d ~ group, data = df)
 ```
 
 ```{r}
-#shapiro test for normality; if p-value > 0.05 then good (I think)
+#Shapiro-Wilk test for normality; if p-value > 0.05 then good (I think)
 shapiro.test(residuals(anova_model))
 ```
 ```{r}
@@ -41,7 +42,7 @@ anova_model <- aov(d ~ group, data = df)
 summary(anova_model)
 ```
 ```{r}
-#post-hoc tukey test to see groupwise comparisons; if p-value < 0.05 then good (I think)
+#Post-hoc Tukey HSD test to see groupwise comparisons; if p-value < 0.05 then good (I think)
 TukeyHSD(anova_model)
 ```
 
