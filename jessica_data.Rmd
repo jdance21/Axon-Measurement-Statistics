@@ -2,7 +2,7 @@
 
 ---
 title: "Jessica C - summer analysis 2025"
-author: "Madison"
+author: "Madison Chisholm"
 date: "2025-05-20"
 output: pdf_document
 ---
