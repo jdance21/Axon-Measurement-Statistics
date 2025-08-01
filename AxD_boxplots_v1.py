@@ -1,5 +1,7 @@
 ### Makes a boxplot of AxD Values for each angle of each mouse ###
 
+### not coloured in boxplot, vertical lines in background ###
+
 import numpy as np
 import matplotlib.pyplot as plt
 
