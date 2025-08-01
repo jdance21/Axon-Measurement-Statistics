@@ -1,6 +1,6 @@
 ### Makes boxplot of AxD values for each angle orientation for each mouse ###
 
-### coloured in boxplot, no vertical lines in background ###
+### coloured in boxplot, no vertical lines in background, no data points ###
 
 
 import pandas as pd
